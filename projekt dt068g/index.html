@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Färdtjänst JKPG</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ 
+  <header class="header">
+    <div class="header-container">
+      <h1>Färdtjänst JKPG</h1>
+      <p>din resa, vårt ansvar.</p>
+    </div>
+  </header>
+
+  <nav class="nav">
+    <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    <ul class="menu">
+        <li><a href="index.html" class="active">Hem</a></li>
+        <li><a href="book.html">Boka resa</a></li>
+        <li><a href="change.html">Omboka resa</a></li>
+        <li><a href="cancel.html">Avboka resa</a></li>
+        <li><a href="contact.html">Kontakt</a></li>
+        <li><a href="about.html">Om Färdtjänst</a></li>
+    </ul>
+    <div class="close-menu">&times;</div>
+  </nav>
+
+
+  <section class="hero">
+    <img src="images/jkpg.JPG" alt="Jönköping tändsticksområdet på kvällen">
+    <div class="booking-form">
+      <h2>Boka din resa här</h2>
+      <form action="book.html">
+        <label for="from">Från:</label>
+        <input type="text" id="from" placeholder="Ange avreseadress" aria-label="Avreseadress">
+        <label for="to">Till:</label>
+        <input type="text" id="to" placeholder="Ange destination" aria-label="Destination">
+        <button type="submit" aria-label="Sök efter resa">SÖK</button>
+      </form>
+    </div>
+  </section>
+
+
+  <section class="info">
+
+    <article class="news">
+      <div class="news-content">
+        <img src="images/teknologi.jpg.avif" alt="Dator och telefon">
+        <div>
+          <h2>Välkommen till vår nya bokningssida!</h2>
+          <p>
+            Boka enkelt dina färdtjänstresor via mobil, surfplatta eller dator. Välj att boka ny resa, återkommande resa, omboka eller avboka en befintlig resa. </p>
+
+            <p>För hjälp med bokning, kontakta vår <a href="contact.html">Kundservice</a> eller läs vår FAQ. Vill du veta mer om färdtjänst? Klicka på <a href="about.html">"Om Färdtjänst"</a> för mer information.
+          </p>
+        </div>
+      </div>
+    </article>
+
+    <section class="booked-trips-section">
+        <div class="booked-trips-container">
+            <h2>Mina bokade resor</h2>
+    <article class="booked-trips">
+    
+      <p><i>Bokning #070109</i></p>
+       <p>Varje måndag</p>
+       <p><b>Nästa:</b> 25 januari 2025</p>
+      <p><b>Från:</b> Huskvarna centrum till Jönköping Atollen <b>Tid:</b> 08.30</p>
+      <p><b>Retur:</b> Jönköping Atollen till Huskvarna centrum <b>Tid:</b> 11.00</p>
+      <div class="buttons">
+        <a href="change.html" class="btn-yellow" aria-label="Omboka din resa">Omboka resa</a>
+        <a href="cancel.html" class="btn-red" aria-label="Avboka din resa">Avboka resa</a>
+        <a href="wherecar.html" class="btn-grey" aria-label="Kontrollera var din bil är">Var är min bil?</a>
+      </div>
+    </article>
+        </div>
+    </section>
+    
+    <section class="completed-trips-section">
+        <div class="completed-trips-container">
+    <h2>Avslutade resor</h2>
+    <article class="completed-trips">
+        <p><i>Bokning #010507</i></p>
+        <p><b>Datum:</b> 30 november 2024</p>
+        <p><b>Från:</b> Huskvarna centrum till Länssjukhuset Ryhov <b>Tid:</b> 11.15</p>
+        <p><b>Retur:</b> Länssjukhuset Ryhov till Huskvarna centrum <b>Tid:</b> 13.20</p>
+        <div class="buttons">
+            <a class="btn-green" href="book.html?from=Huskvarna+centrum&to=Länssjukhuset+Ryhov&time=11.15" aria-label="Boka igen samma resa">Boka igen</a>
+        </div>
+    </article>
+
+    <article class="completed-trips">
+        <p><i>Bokning #020406</i></p>
+        <p><b>Datum:</b> 20 november 2024</p>
+        <p><b>Från:</b> Jönköping Atollen till Elmia <b>Tid:</b> 09.00</p>
+        <p><b>Retur:</b> Elmia till Jönköping Atollen <b>Tid:</b> 12.30</p>
+        <div class="buttons">
+            <a class="btn-green" href="book.html?from=Jönköping+Atollen&to=Elmia&time=09.00" aria-label="Boka igen samma resa">Boka igen</a>
+        </div>
+      </article>
+        </div>
+  </section>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-container">
+  
+      <div class="footer-links">
+        <a href="https://www.jlt.se/globalassets/dokument-2024/2024-regelverk-fardtjanst-20240101.pdf" target="_blank" rel="noopener noreferrer">Regelverk</a>
+
+        <a href="about.html">Om Färdtjänst</a>
+        <a href="contact.html">Kontakt</a>
+        <a href="tillganglighet.html">Tillgänglightesredogörelse</a>
+      </div>
+    
+      <div class="footer-contact">
+        <p>Bokning via telefon: 0123-456 789</p>
+        <p>E-post: <a href="mailto:fardtjanstjkpg@miun.se">fardtjanstjkpg@miun.se</a></p>
+      </div>
+    </div>
+  </footer>
+  <script>
+   const hamburger = document.querySelector('.hamburger');
+const closeMenu = document.querySelector('.close-menu');
+const menu = document.querySelector('.menu');
+
+// öppna menyn
+hamburger.addEventListener('click', () => {
+  menu.classList.add('active'); 
+});
+
+// stäng menyn
+closeMenu.addEventListener('click', () => {
+  menu.classList.remove('active'); 
+});
+
+
+  </script>
+  
+</body>
+</html>

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Omboka din resa - Färdtjänst JKPG</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="change.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="header-container">
+            <h1>Färdtjänst JKPG</h1>
+            <p>din resa, vårt ansvar.</p>
+        </div>
+    </header>
+
+ 
+    <nav class="nav">
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        <ul class="menu">
+            <li><a href="index.html">Hem</a></li>
+            <li><a href="book.html">Boka resa</a></li>
+            <li><a href="change.html" class="active">Omboka resa</a></li>
+            <li><a href="cancel.html">Avboka resa</a></li>
+            <li><a href="contact.html">Kontakt</a></li>
+            <li><a href="about.html">Om Färdtjänst</a></li>
+        </ul>
+        <div class="close-menu">&times;</div>
+    </nav>
+
+  
+    <section class="hero">
+        <img src="images/jkpg.JPG" alt="Jönköping tändsticksområdet på kvällen">
+    </section>
+
+    <h2 class="change-title">Omboka din resa</h2>
+    <section class="change-section">
+       
+        
+ 
+        <div class="booking-options">
+            <label for="booking-select">Vilken resa vill du omboka?</label>
+            <select id="booking-select">
+                <option value="48392" 
+                    data-from-out="Huskvarna Centrum" 
+                    data-to-out="Länssjukhuset Ryhov" 
+                    data-date-out="2024-12-28" 
+                    data-time-out="07:00" 
+                    data-from-home="Länssjukhuset Ryhov" 
+                    data-to-home="Huskvarna Centrum" 
+                    data-date-home="2024-12-28" 
+                    data-time-home="09:15">
+                    #48392 Huskvarna - Länssjukhuset Ryhov
+                </option>
+                <option value="48393" 
+                    data-from-out="Huskvarna Centrum" 
+                    data-to-out="Asecs Ikea" 
+                    data-date-out="2024-12-29" 
+                    data-time-out="08:30" 
+                    data-from-home="Asecs Ikea" 
+                    data-to-home="Huskvarna Centrum" 
+                    data-date-home="2024-12-29" 
+                    data-time-home="10:00">
+                    #48393 Huskvarna - Asecs Ikea
+                </option>
+                <option value="48394" 
+                    data-from-out="Huskvarna Centrum" 
+                    data-to-out="Centralstationen" 
+                    data-date-out="2024-12-30" 
+                    data-time-out="09:00" 
+                    data-from-home="Centralstationen" 
+                    data-to-home="Huskvarna Centrum" 
+                    data-date-home="2024-12-30" 
+                    data-time-home="11:00">
+                    #48394 Huskvarna - Centralstationen
+                </option>
+            </select>
+            
+        </div>
+
+     
+        <form class="change-form">
+<h2 class="to-title">Utresa</h2>
+            <fieldset class="trip-details">
+                <label for="from-out">Från:</label>
+                <input type="text" id="from-out" value="Huskvarna Centrum" required>
+
+                <label for="to-out">Till:</label>
+                <input type="text" id="to-out" value="Länssjukhuset Ryhov" required>
+
+                <label for="date-out">Datum:</label>
+                <input type="date" id="date-out" value="2024-12-28" required>
+
+                <label for="time-out">Tid:</label>
+                <input type="time" id="time-out" value="07:00" required>
+            </fieldset>
+
+            
+            <h2 class="home-title">Hemresa</h2>
+            <fieldset class="trip-details">
+
+                <label for="from-home">Från:</label>
+                <input type="text" id="from-home" value="Länssjukhuset Ryhov" required>
+
+                <label for="to-home">Till:</label>
+                <input type="text" id="to-home" value="Huskvarna Centrum" required>
+
+                <label for="date-home">Datum:</label>
+                <input type="date" id="date-home" value="2024-12-28" required>
+
+                <label for="time-home">Tid:</label>
+                <input type="time" id="time-home" value="09:15" required>
+            </fieldset>
+
+           <h2 class="additional-title">Tilläggstjänster</h2>
+            <fieldset class="additional-services">
+               
+                <label><input type="checkbox" value="wheelchair" checked> Rullstol</label>
+                <label><input type="checkbox" value="assistant"> Ledsagare</label>
+                <label><input type="checkbox" value="baggage"> Extra bagage</label>
+                <label><input type="checkbox" value="companion"> Medresenär</label>
+            </fieldset>
+
+            <h2 class="recurring-title">Återkommande resa?</h2>
+            <fieldset class="recurring-trip">
+                <label for="recurring-yes">
+                    <input type="radio" id="recurring-yes" name="recurring" value="yes">
+                    Ja, varje
+                </label>
+                    <select>
+                        <option value="monday">Måndag</option>
+                        <option value="tuesday">Tisdag</option>
+                        <option value="wednesday">Onsdag</option>
+                        <option value="thursday">Torsdag</option>
+                        <option value="friday">Fredag</option>
+                    </select>
+                <label><input type="radio" name="recurring" value="no" checked> Nej</label>
+            </fieldset>
+
+    
+            <div class="submit-btn-change">
+                <a href="bookconfirmation.html" class="btn-yellow">Omboka resan</a>
+            </div>
+        </form>
+    </section>
+    <footer class="footer">
+        <div class="footer-container">
+          <div class="footer-links">
+            <a href="https://www.jlt.se/globalassets/dokument-2024/2024-regelverk-fardtjanst-20240101.pdf" target="_blank" rel="noopener noreferrer">Regelverk</a>
+            <a href="about.html">Om Färdtjänst</a>
+            <a href="contact.html">Kontakt</a>
+            <a href="tillganglighet.html">Tillgänglightesredogörelse</a>
+          </div>
+          <div class="footer-contact">
+            <p>Bokning via telefon: 0123-456 789</p>
+            <p>E-post: <a href="mailto:fardtjanstjkpg@miun.se">fardtjanstjkpg@miun.se</a></p>
+          </div>
+        </div>
+      </footer>
+     
+      <script src="script.js"></script>
+      <script>
+        const hamburger = document.querySelector('.hamburger');
+     const closeMenu = document.querySelector('.close-menu');
+     const menu = document.querySelector('.menu');
+     
+     // öppna menyn
+     hamburger.addEventListener('click', () => {
+       menu.classList.add('active'); 
+     });
+     
+     // stäng menyn
+     closeMenu.addEventListener('click', () => {
+       menu.classList.remove('active'); 
+     });
+     
+     
+       </script>
+</body>
+</html>

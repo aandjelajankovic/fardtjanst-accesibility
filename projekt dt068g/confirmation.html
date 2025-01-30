@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bokning bekräftad - Färdtjänst JKPG</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-container">
+            <h1>Färdtjänst JKPG</h1>
+            <p>din resa, vårt ansvar.</p>
+        </div>
+    </header>
+
+    <nav class="nav">
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        <ul>
+            <li><a href="index.html">Hem</a></li>
+            <li><a href="book.html">Boka resa</a></li>
+            <li><a href="change.html">Omboka resa</a></li>
+            <li><a href="cancel.html">Avboka resa</a></li>
+            <li><a href="contact.html">Kontakt</a></li>
+            <li><a href="about.html">Om Färdtjänst</a></li>
+        </ul>
+        <div class="close-menu">&times;</div>
+    </nav>
+
+    <section class="confirmation-section">
+        <h2>Din resa är bokad!</h2>
+        <div id="confirmation-details">
+            
+        </div>
+        <div class="confirmation-next">
+            <p>Behöver du boka en till resa?</p>
+            <button onclick="window.location.href='book.html'" class="btn-grey">Boka fler resor</button>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <p>Bokning via telefon: 0123-456 789</p>
+            <p>E-post: <a href="mailto:fardtjanstjkpg@miun.se">fardtjanstjkpg@miun.se</a></p>
+        </div>
+    </footer>
+
+    <script>
+    
+        const params = new URLSearchParams(window.location.search);
+        const from = params.get("from");
+        const to = params.get("to");
+        const date = params.get("date");
+        const time = params.get("time");
+        const additions = params.getAll("service"); 
+const additionsDisplay = additions.length > 0 ? additions.join(", ") : "Inga tillägg";
+
+
+    
+        const confirmationDetails = document.getElementById("confirmation-details");
+        confirmationDetails.innerHTML = `
+            <p><strong>Från:</strong> ${from}</p>
+            <p><strong>Till:</strong> ${to}</p>
+            <p><strong>Datum:</strong> ${date}</p>
+            <p><strong>Tid:</strong> ${time}</p>
+            <p><strong>Tilläggstjänster:</strong> ${additionsDisplay}</p>
+        `;
+        const hamburger = document.querySelector('.hamburger');
+const closeMenu = document.querySelector('.close-menu');
+const menu = document.querySelector('.menu');
+
+// öppna menyn
+hamburger.addEventListener('click', () => {
+  menu.classList.add('active'); 
+});
+
+// stäng menyn
+closeMenu.addEventListener('click', () => {
+  menu.classList.remove('active'); 
+});
+    </script>
+</body>
+</html>

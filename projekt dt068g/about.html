@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Om Färdtjänst - Färdtjänst JKPG</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="header-container">
+            <h1>Färdtjänst JKPG</h1>
+            <p>din resa, vårt ansvar.</p>
+        </div>
+    </header>
+
+
+    <nav class="nav">
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul class="menu">
+            <li><a href="index.html">Hem</a></li>
+            <li><a href="book.html">Boka resa</a></li>
+            <li><a href="change.html">Omboka resa</a></li>
+            <li><a href="cancel.html">Avboka resa</a></li>
+            <li><a href="contact.html">Kontakt</a></li>
+            <li><a href="about.html" class="active">Om Färdtjänst</a></li>
+        </ul>
+        <div class="close-menu">&times;</div>
+    </nav>
+
+
+    <section class="hero">
+        <img src="images/jkpg.JPG" alt="Jönköping tändsticksområdet på kvällen">
+    </section>
+
+    <h2 class="about-title">Om färdtjänsten</h2>
+    <section class="about-section">
+       
+        <div class="content">
+            <p>
+                Färdtjänst är en samhällsservice för personer med varaktiga funktionsnedsättningar som har betydande svårigheter att resa med tåg eller buss. 
+                I Jönköpings län hanteras färdtjänsten av Region Jönköpings län i samarbete med Jönköpings Länstrafik.
+            </p>
+
+            <h3>Hur fungerar färdtjänstresor?</h3>
+            <p>
+                Färdtjänst är en del av kollektivtrafiken, vilket innebär att resorna kan samordnas med andra passagerare. Resan sker dock alltid med hänsyn till resenärens hjälpbehov.
+            </p>
+            <ul>
+                <li>Inom kommunen: Minst 1 timme före avresa.</li>
+                <li>Längre resor: Minst 2 timmar före avresa.</li>
+            </ul>
+
+            <h3>Avgifter</h3>
+            <p>Kostnaden för färdtjänst beror på antalet zoner i kollektivtrafiksystemet:</p>
+            <ul>
+                <li>1 zon: 40 kr för vuxna, 24 kr för barn/ungdom.</li>
+                <li>2 zoner: 80 kr för vuxna, 48 kr för barn/ungdom.</li>
+                <li>Hela länet: 160 kr för vuxna, 96 kr för barn/ungdom.</li>
+            </ul>
+            <p>För resor utanför länet tillkommer en extra avgift på 80 kr för vuxna och 46 kr för barn/ungdom. Betalning kan ske med kontanter, betalkort eller faktura.</p>
+
+            <h3>Vem har rätt till färdtjänst?</h3>
+            <ul>
+                <li>Har en varaktig funktionsnedsättning som varar minst tre månader.</li>
+                <li>Är folkbokförd i Jönköpings län.</li>
+                <li>Har betydande svårigheter att använda allmänna kommunikationsmedel.</li>
+            </ul>
+
+            <h3>Ledsagare och medresenärer</h3>
+            <ul>
+                <li>En ledsagare kan följa med kostnadsfritt om behovet finns.</li>
+                <li>Barn under 7 år reser alltid gratis.</li>
+                <li>Medresenärer betalar samma avgift som resenären.</li>
+            </ul>
+
+            <h3>Särskilda tjänster</h3>
+            <ul>
+                <li>Arbetsresor: Kan inkludera lämning och hämtning av barn på förskola/fritids.</li>
+                <li>Förflyttningshjälpmedel: Godkända rullstolar och andra hjälpmedel får tas med.</li>
+                <li>Resor utanför länet: Möjlighet att ansöka om riksfärdtjänst.</li>
+            </ul>
+
+            <h3>Ansökan</h3>
+            <p>
+                Ansökan om färdtjänst görs genom Jönköpings Länstrafik. Beslut om tillstånd fattas normalt inom fyra veckor, och det är möjligt att överklaga beslutet vid behov.
+                För mer information och fullständiga regler, se Regelverk sida (öppnas i nytt fönster).
+            </p>
+        </div>
+    </section>
+
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-links">
+                <a href="https://www.jlt.se/globalassets/dokument-2024/2024-regelverk-fardtjanst-20240101.pdf" target="_blank" rel="noopener noreferrer">Regelverk</a>
+                <a href="about.html">Om Färdtjänst</a>
+                <a href="contact.html">Kontakt</a>
+                <a href="tillganglighet.html">Tillgänglightesredogörelse</a>
+            </div>
+            <div class="footer-contact">
+                <p>Bokning via telefon: 0123-456 789</p>
+                <p>E-post: <a href="mailto:fardtjanstjkpg@miun.se">fardtjanstjkpg@miun.se</a></p>
+            </div>
+        </div>
+    </footer>
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const closeMenu = document.querySelector('.close-menu');
+        const menu = document.querySelector('.menu');
+
+        // öppna menyn
+        hamburger.addEventListener('click', () => {
+            menu.classList.add('active');
+            closeMenu.style.display = 'block';
+        });
+
+        // stäng menyn
+        closeMenu.addEventListener('click', () => {
+            menu.classList.remove('active');
+            closeMenu.style.display = 'none';
+        });
+    </script>
+</body>
+</html>

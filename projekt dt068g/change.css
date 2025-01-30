@@ -1,0 +1,144 @@
+
+.change-section {
+    background-color: rgba(217, 217, 217, 0.61);
+    margin: 30px auto;
+    padding: 30px;
+    width: 90%;
+    max-width: 80%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.change-title {
+    text-align: left;
+    font-size: 2rem;
+    color: white;
+    margin: 20px 0 10px 40px;
+    font-weight: bold;
+}
+
+
+.booking-options {
+    margin-bottom: 20px;
+}
+
+
+
+fieldset {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px 10px; 
+    padding-top: 30px; 
+    margin-bottom: 20px;
+    background-color: rgba(217, 217, 217, 0.8);
+    margin: 20px 0;
+}
+
+.home-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 10px;
+}
+
+
+.booking-options label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+    color: black;
+    font-size: 1.5rem;
+}
+
+#booking-select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+
+}
+
+
+.trip-details {
+    background-color: #EDEDED;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.to-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: black;
+    margin-bottom: 5px;
+    
+}
+
+.trip-details label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: black;
+}
+
+.trip-details input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+
+.additional-services, .recurring-trip {
+    background-color: #EDEDED;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.additional-title,
+.recurring-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: black;
+    margin-bottom: 10px;
+}
+
+.additional-services label,
+.recurring-trip label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+    color: black;
+}
+
+.recurring-trip select {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+
+.submit-btn-change {
+    text-align: center;
+}
+
+.btn-yellow {
+    background-color: #FFD700;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-yellow:hover {
+    background-color: #e6c300;
+}
